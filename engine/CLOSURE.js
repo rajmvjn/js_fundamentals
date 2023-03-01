@@ -72,8 +72,52 @@ exmpleTimer(180, 3)
 
 
 
+// Connter with constructor function
 
+function Counter() {
+  var count = 0;
 
+  this.inc = function() {
+    count++;
+    console.log(count);
+  }
+
+  this.dec = function() {
+    count--; 
+    console.log(count)
+  }
+}
+
+var cnt1 = new Counter();
+
+cnt1.inc();
+cnt1.inc();
+cnt1.dec();
+
+// class counter
+
+class CounterCls {
+  constructor() {
+    this.count = 10
+  }
+
+  inc() {
+    this.count++;
+    console.log(this.count);
+  }
+
+  dec() {
+    this.count--;
+    console.log(this.count);
+  }
+
+}
+
+const cntObj = new CounterCls();
+cntObj.inc()
+cntObj.inc()
+cntObj.inc()
+cntObj.dec()
 
 
 

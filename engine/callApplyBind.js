@@ -10,8 +10,8 @@ const person = {
 
 const printPerson = person.printPerson;
 
-printPerson.call(person, 'etr')
-printPerson.apply({name:'adi', age:5}, ['etr'])
+printPerson.call(person, 'etr') // rajesh 20 etr
+printPerson.apply({name:'adi', age:5}, ['etr']) // adi 5 etr
 const places = ['etr'];
 printPerson.call({name:'adi', age:5}, ...places)
 
@@ -22,7 +22,7 @@ const p2 = {
 
 const newFn = printPerson.bind(p2, 'ptra');
 
-newFn('lets see');
+newFn('lets see'); // AAD 5 ptra
 
 // with event listners
 
