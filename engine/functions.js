@@ -102,4 +102,16 @@ a(function(){})
 
 
 // Arrow functions
+
+
+
+
+
+// Callback function - function passed as an argument to another function
+// everything runs in the call stack, the only one JS thread execution
+
+setTimeout(function cb(){console.log('callback function'), 2000})
+
+// event call back
+document.getElementById('sub_button').addEventListener("click", function xz(){console.log('button clicked')})
  
